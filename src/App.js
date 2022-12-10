@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
-  const [weatherForecast, setWeatherForecast] = useState(null);
+  // const [weatherForecast, setWeatherForecast] = useState(null);
 
   function handleOnSearch(searchValue) {
     const [lat, lon] = searchValue.value.split(" ");
@@ -20,10 +20,10 @@ function App() {
     Promise.all([currentWeatherFetch, weatherForecastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
-        const forcastResponse = await response[1].json();
+        // const forcastResponse = await response[1].json();
 
         setCurrentWeather({ city: searchValue.label, ...weatherResponse });
-        setWeatherForecast({ city: searchValue.label, ...forcastResponse });
+        // setWeatherForecast({ city: searchValue.label, ...forcastResponse });
       })
       .catch(console.log);
   }
