@@ -1,0 +1,48 @@
+.App {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.weather-wrapper {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 25%);
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #0331ff7a, #0030ff);
+  opacity: 90%;
+  margin: 20px auto 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.weather-top h4 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.weather-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.weather-icon {
+  margin: -15px 0 0 0;
+}
+
+.weather-degree {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.weather-bottom {
+  font-size: 10px;
+  padding: 0 10px;
+}
+
+.weather-bottom-first,
+.weather-bottom-second {
+  display: flex;
+  justify-content: space-between;
+}
