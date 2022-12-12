@@ -1,7 +1,8 @@
+import Container from "@mui/material/Container";
+
 function Weather({ currentWeather }) {
-  console.log(currentWeather);
   return (
-    <>
+    <Container fixed={true}>
       <div className="weather-wrapper">
         <div className="weather-top">
           <h4>{currentWeather.city}</h4>
@@ -46,7 +47,7 @@ function Weather({ currentWeather }) {
           </div>
         </div>
       </div>
-    </>
+    </Container>
   );
 }
 
